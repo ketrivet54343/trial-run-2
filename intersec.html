@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMA Intermediate</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #5C6BC0;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      color: #fff;
+      animation: fadeIn 1s ease-out;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin-top: 1rem;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #FF7043;
+    }
+
+    main {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .resource-section {
+      background-color: #fff;
+      margin-bottom: 1.5rem;
+      padding: 2rem;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s forwards;
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .resource-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #5C6BC0;
+    }
+
+    .resource-section p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #5C6BC0;
+      color: #fff;
+      padding: 1rem;
+      position: relative;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hover effects for sections */
+    .resource-section:hover {
+      background-color: #FF7043;
+      color: #fff;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .resource-section {
+        padding: 1.5rem;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      nav ul {
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CMA Intermediate Resources</h1>
+    <nav>
+      <ul>
+        <li><a href="#past-papers">Past Papers</a></li>
+        <li><a href="#mtps">MTPS</a></li>
+        <li><a href="#rtps">RTPS</a></li>
+        <li><a href="#question-bank">Question Bank</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <a href="demo inter.html" id="past-papers" class="resource-section">
+      <h2>Past Papers</h2>
+      <p>Access past exam papers for practice.</p>
+    </a>
+
+    <a href="mtps.html" id="mtps" class="resource-section">
+      <h2>MTPS (Model Test Papers)</h2>
+      <p>Prepare with model test papers designed to simulate exams.</p>
+    </a>
+
+    <a href="rtps.html" id="rtps" class="resource-section">
+      <h2>RTPS (Revision Test Papers)</h2>
+      <p>Revise with our curated set of revision papers.</p>
+    </a>
+
+    <a href="question-bank.html" id="question-bank" class="resource-section">
+      <h2>Question Bank</h2>
+      <p>Browse through a vast collection of questions for practice.</p>
+    </a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Study Resources. All rights reserved.</p>
+  </footer>
+</body>
+</html>
